@@ -4,6 +4,7 @@ from PyDictionary import PyDictionary
 from PIL import Image, ImageTk
 import tkMessageBox
 
+
 dic = PyDictionary()
 
 TITLE_FONT = ("Comic Sans MS", 40, "bold")
@@ -119,7 +120,7 @@ class PageOne(tk.Frame):
         #label.pack()
         #label.place(x=100, y=280)
 
-        self.image1 = tk.PhotoImage(file="images (1).gif")
+        self.image1 = tk.PhotoImage(file="C:/Users/TAYYABA/PycharmProjects/Diplo proj/Images/images (1).gif")
         B1 = tk.Button(self, text = "* Click Here",font=('Gabriola', 20,"underline"),height=250, width=175,fg='#3F00FF',bg='#00E5EE',relief="solid",
                        command=lambda: controller.show_frame("PageTwo"),compound="center",image=self.image1)
         B1.pack()
